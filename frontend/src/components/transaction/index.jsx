@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import transactionsData from '../../assets/data/transaction';
 
+
 export default function Transaction({ title, amount, description }) {
   const [isOpen, setIsOpen] = useState(false);
   const [transactionInfoStates, setTransactionInfoStates] = useState(
