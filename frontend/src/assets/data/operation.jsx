@@ -1,4 +1,4 @@
-const transactionsData = [
+const operationData = [
     {
       date: '27/02/20',
       description: 'Golden Sun Bakery',
@@ -32,5 +32,4 @@ const transactionsData = [
     
   ]; 
 
-  export default transactionsData
-  
+  export default operationData

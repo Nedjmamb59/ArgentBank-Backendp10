@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Error() {
+function Errorpage() {
   return (
     <div>
           <div>Erreur 404 not found !</div>
@@ -11,4 +11,4 @@ function Error() {
   )
 }
 
-export default Error
+export default Errorpage
