@@ -3,8 +3,8 @@ import { createSlice } from '@reduxjs/toolkit';
 
 // Création d'un slice appelé "auth" pour gérer l'état d'authentification
 const authSlice = createSlice({
-  name: 'auth', // Le nom du slice, utilisé pour identifier cette portion de l'état
-  initialState: { // Définition de l'état initial
+  name: 'auth', 
+  initialState: { 
     user: { 
       firstName: '', 
       lastName: '',  

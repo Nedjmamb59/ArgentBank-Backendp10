@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from 'react'; // Importation de React et des hooks nécessaires
-import { useSelector, useDispatch } from 'react-redux'; // Importation des hooks Redux
-import { updateUserName } from '../../redux/authSlice'; // Importation de l'action pour mettre à jour le nom d'utilisateur
-import { editUsernameAPI, loadUserProfile } from '../../redux/api'; // Importation des fonctions API
+import React, { useEffect, useState } from 'react'; 
+import { useSelector, useDispatch } from 'react-redux'; 
+import { updateUserName } from '../../redux/authSlice'; 
+import { editUsernameAPI, loadUserProfile } from '../../redux/api'; 
 
 function Account() {
-  const token = useSelector((state) => state.auth.token); // Sélectionne le token d'authentification
-  const user = useSelector((state) => state.auth.user); // Sélectionne l'utilisateur authentifié
-  const dispatch = useDispatch(); // Initialisation de la fonction dispatch
-  const [isEditing, setIsEditing] = useState(false); // État pour gérer le mode édition
+  const token = useSelector((state) => state.auth.token); 
+  const user = useSelector((state) => state.auth.user); 
+  const dispatch = useDispatch(); 
+  const [isEditing, setIsEditing] = useState(false); 
 
-  const [newUsername, setNewUsername] = useState(user.userName); // État pour le nouveau nom d'utilisateur
+  const [newUsername, setNewUsername] = useState(user.userName); 
 
   useEffect(() => {
     if (token) {
-      loadUserProfile(dispatch, token); // Chargement du profil utilisateur si le token est présent
+      loadUserProfile(dispatch, token); 
     }
-    setNewUsername(user.userName); // Mise à jour du nom d'utilisateur
+    setNewUsername(user.userName); 
   }, [dispatch, token, user.userName]);
 
   const saveUsername = async () => {
