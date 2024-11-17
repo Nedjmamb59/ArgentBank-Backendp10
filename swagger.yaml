@@ -75,7 +75,7 @@ paths:
         - application/json
       responses:
         '200':
-          description: User profile retrieved successully
+          description: User profile retrieved successfully
           schema:
             $ref: '#/definitions/ApiResponse'
         '400':
@@ -105,7 +105,7 @@ paths:
         - application/json
       responses:
         '200':
-          description: User profile retrieved successully
+          description: User profile retrieved successfully
           schema:
             $ref: '#/definitions/ApiResponse'
         '400':
@@ -131,7 +131,7 @@ paths:
         required: true
       responses:
         '200':
-          description: Transaction retrieved successully
+          description: Transaction retrieved successfully
           schema:
             $ref: '#/definitions/AccountsResponse'
         '400':
@@ -204,7 +204,7 @@ paths:
         type: integer
       responses:
         '200':
-          description: Transaction retrieved successully
+          description: Transaction retrieved successfully
           schema:
             $ref: '#/definitions/Transactions'
         '400':
@@ -279,7 +279,7 @@ paths:
         type: integer
       responses:
         '204':
-          description: Transaction delete successully
+          description: Transaction delete successfully
           schema:
             $ref: '#/definitions/TransactionsDeleteCategory'
         '400':
@@ -320,7 +320,7 @@ paths:
             $ref: '#/definitions/TransactionsUpdateNotes'
       responses:
         '200':
-          description: Transaction updated successully
+          description: Transaction updated successfully
           schema:
             $ref: '#/definitions/Transactions'
         '400':
@@ -354,7 +354,7 @@ paths:
         type: integer
       responses:
         '204':
-          description: Transaction delete successully
+          description: Transaction delete successfully
           schema:
             $ref: '#/definitions/TransactionsDeleteCategory'
         '400':
